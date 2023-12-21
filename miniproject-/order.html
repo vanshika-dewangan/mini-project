@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <head>
+ <title>Title of the document</title>
+ </head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/fontawesome/4.7.0/css/font-awesome.min.css">
+
+ <style>
+.rw {
+ display: -ms-flexbox; /* IE10 */
+ display: flex;
+ -ms-flex-wrap: wrap; /* IE10 */
+ flex-wrap: wrap;
+ margin: 0 -16px;
+}
+.col-25 {
+ -ms-flex: 25%; /* IE10 */
+ flex: 25%;
+}
+.col-50 {
+ -ms-flex: 50%; /* IE10 */
+ flex: 50%;
+}
+.col-75 {
+ -ms-flex: 75%; /* IE10 */
+ flex: 75%;
+}
+.col-25,
+.col-50,
+.col-75 {
+ padding: 0 16px;
+}
+.cont {
+ background-color: #f2f2f2;
+ padding: 5px 20px 15px 20px;
+ border: 1px solid lightgrey;
+ border-radius: 3px;
+}
+input[type=text] {
+ width: 100%;
+ margin-bottom: 20px;
+ padding: 12px;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+}
+label {
+ margin-bottom: 10px;
+ display: block;
+}
+.icon-container {
+ margin-bottom: 20px;
+ padding: 7px 0;
+ font-size: 24px;
+}.btn {
+ background-color: #04AA6D;
+ color: white;
+ padding: 12px;
+ margin: 10px 0;
+ border: none;
+ width: 100%;
+ border-radius: 3px;
+ cursor: pointer;
+ font-size: 17px;
+}
+.btn:hover {
+ background-color: #45a049;
+}span.price {
+ float: right;
+ color: grey;
+}/* Responsive layout - when the screen is less than 800px wide, make the two columns stack 
+on top of each other instead of next to each other (and change the direction - make the "cart" 
+column go on top) */
+
+
+           .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("C:\Users\91708\Downloads\main.webp");
+            min-height: 100%;
+           }
+           * {
+            box-sizing: border-box;
+           }
+           /* Style inputs */
+           input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+           }input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+           }
+           input[type=submit]:hover {
+            background-color: #45a049;
+           }
+           /* Style the container/contact section */
+           .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+           }
+           /* Create two columns that float next to eachother */
+           .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+           }
+           /* Clear floats after the columns */
+           .row:after {
+            content: "";
+            display: table;
+            clear: both;
+           }@media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+            }
+           }
+           .text-footer{
+            text-align: center;
+            padding: 30px, 0px;
+            font-family: sans-serif;
+            background: #303030;
+            background-size: cover;
+           }
+           .foot{
+            width: 1300px;
+            height: auto;
+            margin: 0px;
+           }
+           .foot .rows{
+            width: 1300 px;
+            height: 400px;
+           }
+           .foot .rows .c1{
+            width: 325px;
+            height: 400px;
+            float: left;
+           }
+           .foot .rows .c2{
+            width: 325px;
+            height: 400px;
+            float: left;
+           }
+           .foot .rows .c3{
+            width: 325px;
+            height: 400px;
+            float: left;
+           }
+           .foot .rows .c4{
+            width: 325px;
+            height: 400px;
+            float: left;
+           }
+           .sports{
+            list-style-type: none;
+            vertical-align: middle;
+            color: white;
+           }
+           .sports2{
+            list-style: none;
+            vertical-align: middle;
+            color: white;
+           }
+           .sports2 li{
+            display: block;
+           }
+           .sports2 li a:hover{
+            font-size: 20px;
+            color: #DAA520;
+            text-decoration: none;
+           }
+           .sports3{
+            list-style: none;
+            vertical-align: middle;
+            color: white;
+           }
+           .sports3 li{
+            display: block;
+           }
+           .sports3 li a:hover{
+            color: #DAA520 ;
+            font-size: 20px;
+            text-decoration: none;
+           }
+           .sports4{
+            list-style: none;
+            vertical-align: middle;
+            color: white;
+           }
+           .sports4 li{
+            display: block;
+           }
+           .sports4 li a:hover{
+            color: #DAA520 ;
+            font-size: 20px;
+            text-decoration: none;
+           }
+           .style{
+            font-size: 50px;
+           }
+           .style-2{
+            font-size: 25px;
+           }
+           .style-3{
+            color: #DAA520;
+           }
+           .style-4{
+            text-align:center ;
+            font-size: 50px;
+            color: #2F4F4F;
+           }
+           .background{
+            background-color: #303030;
+            background-size: cover;
+            font-size: 15px;
+           } 
+           .copy{
+            color: white;
+           } 
+           .w{
+            background-color: lightgray;
+           }
+           .dropdown {
+            float: left;
+            overflow: hidden;
+           }
+           /* Dropdown button */
+           .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 0px;
+            background-color: inherit;
+            margin: 0; /* Important for vertical align on mobile phones */
+           }
+           .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+           }
+           .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 5px 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+           }
+           .dropdown-content a:hover {
+            background-color: #ddd;
+           }
+           /* Show the dropdown menu on hover */
+           .dropdown:hover .dropdown-content {
+            display: block;
+           }
+           body {font-family: Arial, Helvetica, sans-serif;}
+           form {border: 3px solid #f1f1f1;}
+           input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+           }
+           button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 8px 10px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+           }
+           button:hover {
+            opacity: 0.8;
+           }
+           .cancelbtn {
+            width: auto;
+            padding: 8px 18px;
+            background-color: #f44336;
+           }
+           .container {
+            padding: 10px;
+           }
+           span.psw {
+            float: left;
+            padding-top: 0px;
+           }/* Change styles for span and cancel button on extra small screens */
+           @media screen and (max-width: 160px) {
+            span.psw {
+            display: block;
+            float: none;
+            }
+            .cancelbtn {
+            width: 100%;
+            }
+           }
+           .imag {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+           }
+           .imag img {
+            width: 100%;
+            height: auto;
+           }
+           .imag .btn {
+            position: absolute;
+            top: 98%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+           }
+           .imag .btn:hover {
+            background-color: black;
+           }
+       
+</style>
+ <div class="rw">
+ <div class="col-50">
+ <h3>Billing Address</h3>
+ <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+ <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+ <label for="email"><i class="fa fa-envelope"></i> Email</label>
+ <input type="text" id="email" name="email" placeholder="john@example.com">
+ <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+ <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+ <label for="city"><i class="fa fa-institution"></i> City</label>
+ <input type="text" id="city" name="city" placeholder="New York">
+ <div class="rw">
+ <div class="col-50">
+ <label for="state">State</label>
+ <input type="text" id="state" name="state" placeholder="NY">
+ </div>
+ <div class="col-50">
+ <label for="zip">Zip</label>
+ <input type="text" id="zip" name="zip" placeholder="10001">
+ </div>
+ </div>
+ </div>
+ <div class="col-50">
+ <h3>Payment</h3>
+ <label for="fname">Accepted Cards</label>
+ <div class="icon-container">
+ <i class="fa fa-cc-visa" style="color:navy;"></i>
+ <i class="fa fa-cc-amex" style="color:blue;"></i>
+ <i class="fa fa-cc-mastercard" style="color:red;"></i>
+ <i class="fa fa-cc-discover" style="color:orange;"></i>
+ </div>
+ <label for="cname">Name on Card</label>
+ <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+ <label for="ccnum">Credit card number</label>
+ <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-
+4444">
+ <label for="expmonth">Exp Month</label>
+ <input type="text" id="expmonth" name="expmonth" placeholder="September">
+ <div class="rw">
+ <div class="col-50">
+ <label for="expyear">Exp Year</label>
+ <input type="text" id="expyear" name="expyear" placeholder="2018">
+ </div>
+ <div class="col-50">
+ <label for="cvv">CVV</label>
+ <input type="text" id="cvv" name="cvv" placeholder="352">
+ </div>
+ </div>
+ </div>
+ </div>
+ <label>
+ <input type="checkbox" checked="checked" name="sameadr"> Shipping address same 
+as billing
+ </label>
+ <input type="submit" value="Continue to checkout" class="btn">
+ </form>
+ </div>
+ </div>
+ <div class="col-25">
+ <div class="cont">
+ <h4>Cart
+ <span class="price" style="color:black">
+ <i class="fa fa-shopping-cart"></i>
+ <b>4</b>
+ </span>
+ </h4>
+ <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+ <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+ <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+ <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+ <hr>
+ <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+ </div>
+ </div>
+</div>
+ <footer class="background">
+        <div class="foot">
+        <div class="rows">
+        <div class="c1">
+        <ul class="sports">
+        <li><img src=""></li>
+        <li class="style-3">SA.thousand Oaks</li>
+        <li>1011 Ranch conigo Blvd.</li>
+        <li>MAIN (844) 513-4235</li>
+        <li class="style-3">MartMILL (844) 472-7856</li>
+        </ul>
+        </div>
+        <div class="c3">
+        <ul class="sports3">
+        <li><a href="#men">Men</a></li>
+        <li><a href="#women">Women</a></li>
+        <li><a href="#kids">Kids</a></li>
+        <li><a href="#homeset">Homeset</a></li>
+        <li><a href="#skincare">Skincare</a></li>
+        <li><a href="#giftcard">Gift cards</a></li>
+        <li><a href="#blog">Blog</a></li>
+        </ul>
+        </div>
+        <div class="c2">
+        <ul class="sports2">
+        <li><a href="">Contact</a></li>
+        <li><a href="">T & C</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Track Orders</a></li>
+        <li><a href="">Returns</a></li>
+        <li><a href="">Shipping</a></li>
+        <li><a href="">Cancellation</a></li>
+        <li><a href="">Privacy policy</a></li>
+        <li><a href="">Terms of Use</a></li>
+        <li><a href="">Grievance Officer</a></li>
+        </ul>
+        </div>
+        <div class="c4">
+        <ul class="sports4">
+        <li>Popular searches</li>
+        <li><a href="">T-shirts</a></li>
+        <li><a href="">Sandals</a></li>
+        <li><a href="">Blazers</a></li>
+        <li><a href="">Boxers</a></li>
+        <li><a href="">Shoes</a></li>
+        <li><a href="">Mirror</a></li>
+        <li><a href="">Forever 21</a></li>
+        <li><a href="">Adidas shoes</a></li>
+        <li><a href="">Kurtis</a></li>
+        </ul>
+        </div>
+        <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div></div></div>
+       </footer>
+       <br><br>
+       <div class="w">
+       <h2><b>SHOP ONLINE AT MartMILL WITH COMPLETE CONVENIENCE</b></h2>
+       <p>Another reason why MartMILL is the best of all online stores is the complete 
+       convenience that it offers. You can view your favourite brands with price options for 
+       different products in one place. A user-friendly interface will guide you through your 
+       selection process. Comprehensive size charts, product information and high-resolution 
+       images help you make the best buying decisions. You also have the freedom to choose your 
+       payment options, be it card or cash-on-delivery. The 30-day returns policy gives you more 
+       power as a buyer. Additionally, the try-and-buy option for select products takes customerfriendliness to the next level.
+       Enjoy the hassle-free experience as you shop comfortably from your home or your 
+       workplace. You can also shop for your friends, family and loved-ones and avail our gift 
+       services for special occasions.</p>
+       <h2><b>BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</b></h2>
+       Be it clothing, footwear or accessories, MartMILL offers you the ideal combination of 
+       fashion and functionality for men, women and kids. You will realise that the sky is the limit 
+       when it comes to the types of outfits that you can purchase for different occasions.
+       <br>
+       <br>
+       <b>Smart men’s clothing</b> - At MartMILL you will find myriad options in smart formal 
+       shirts and trousers, cool T-shirts and jeans, or kurta and pyjama combinations for men. Wear 
+       your attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and 
+       distressed jeans. Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably 
+       smart. Team them up with chinos, cuffed jeans or cropped trousers for a smart casual look. 
+       Opt for a stylish layered look with biker jackets. Head out in cloudy weather with courage in 
+       water-resistant jackets. Browse through our innerwear section to find supportive garments 
+       which would keep you confident in any outfit.
+       <br>
+       <br>
+       <b>Trendy women’s clothing </b>- Online shopping for women at MartMILL is a moodelevating experience. Look hip and stay comfortable with chinos and printed shorts this 
+       summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a 
+       sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose 
+       your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered and 
+       peplum tops, to name a few. Team them up with skinny-fit jeans, skirts or palazzos. Kurtis 
+       and jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees 
+       and lehenga-choli selections are perfect to make an impression at big social events such as 
+       weddings. Our salwar-kameez sets, kurtas and Patiala suits make comfortable options for 
+       regular wear.
+       <br>
+       <br>
+       <b>Fashionable footwear</b> - While clothes maketh the man, the type of footwear you 
+       wear reflects your personality. We bring you an exhaustive lineup of options in casual shoes 
+       for men, such as sneakers and loafers. Make a power statement at work dressed in brogues 
+       and oxfords. Explore our lineup of fashionable footwear for ladies, including pumps, heeled 
+       boots, wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with embellished 
+       and metallic flats.
+       <br>
+       <br>
+       <b>Stylish accessories</b> - MartMILL is one of the best online shopping sites for classy 
+       accessories that perfectly complement your outfits. You can select smart analogue or digital 
+       watches and match them up with belts and ties. Pick up spacious bags, backpacks, and wallets 
+       to store your essentials in style. Whether you prefer minimal jewellery or grand and sparkling 
+       pieces, our online jewellery collection offers you many impressive options.
+       <br><br>
+       <b>Fun and frolic</b> - Online shopping for kids at MartMILL is a complete joy. Your little 
+       princess is going to love the wide variety of pretty dresses, ballerina shoes, headbands and 
+       clips. Delight your son by picking up sports shoes, superhero T-shirts, football jerseys and 
+       much more from our online store. Check out our lineup of toys with which you can create 
+       memories to cherish.
+       <br><br>
+       <b>Beauty begins here </b>- You can also refresh, rejuvenate and reveal beautiful skin with 
+       personal care, beauty and grooming products from MartMILL. Our soaps, shower gels, skin 
+       care creams, lotions and other ayurvedic products are specially formulated to reduce the 
+       effect of aging and offer the ideal cleansing experience. Keep your scalp clean and your hair 
+       uber-stylish with shampoos and hair care products. Choose makeup to enhance your natural 
+       beauty.
+       <br><br>
+       MartMILL is one of the best online shopping sites in India which could help transform your 
+       living spaces completely. Add colour and personality to your bedrooms with bed linen and 
+       curtains. Use smart tableware to impress your guest. Wall decor, clocks, photo frames and 
+       artificial plants are sure to breathe life into any corner of your home.
+       </div>
+       
+       
+   
+   
+
+</body>
+</html>

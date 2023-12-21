@@ -1,0 +1,627 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+           body, html {
+            height: 100%;
+            line-height: 1.8;
+           }
+            .w3-bar .w3-button {
+            padding: 16px;
+           }
+           .w3-bar-right{
+    float: right;
+}
+               .w3-bar{
+
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.w3-bar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.w3-bar a:hover , .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.w3-bar a.active {
+  background-color: #04AA6D;
+  
+}
+
+           .bgimg-1 {
+            background-position: center;
+            background-size: cover;
+            background-image: url("C:\Users\91708\Downloads\main.webp");
+            min-height: 100%;
+           }
+           * {
+            box-sizing: border-box;
+           }
+           /* Style inputs */
+           input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+           }input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+           }
+           input[type=submit]:hover {
+            background-color: #45a049;
+           }
+           /* Style the container/contact section */
+           .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+           }
+           /* Create two columns that float next to eachother */
+           .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+           }
+           /* Clear floats after the columns */
+           .row:after {
+            content: "";
+            display: table;
+            clear: both;
+           }@media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+            }
+           }
+           .text-footer{
+            text-align: center;
+            padding: 30px, 0px;
+            font-family: sans-serif;
+            background: #303030;
+            background-size: cover;
+           }
+           .foot{
+            width: 1300px;
+            height: auto;
+            margin: 0px;
+           }
+           .foot .rows{
+            width: 1300 px;
+            height: 400px;
+           }
+           .foot .rows .c1{
+            width: 325px;
+            height: 400px;
+            float: left;
+           }
+           .foot .rows .c2{
+            width: 325px;
+            height: 400px;
+            float: left;
+           }
+           .foot .rows .c3{
+            width: 325px;
+            height: 400px;
+            float: left;
+           }
+           .foot .rows .c4{
+            width: 325px;
+            height: 400px;
+            float: left;
+           }
+           .sports{
+            list-style-type: none;
+            vertical-align: middle;
+            color: white;
+           }
+           .sports2{
+            list-style: none;
+            vertical-align: middle;
+            color: white;
+           }
+           .sports2 li{
+            display: block;
+           }
+           .sports2 li a:hover{
+            font-size: 20px;
+            color: #DAA520;
+            text-decoration: none;
+           }
+           .sports3{
+            list-style: none;
+            vertical-align: middle;
+            color: white;
+           }
+           .sports3 li{
+            display: block;
+           }
+           .sports3 li a:hover{
+            color: #DAA520 ;
+            font-size: 20px;
+            text-decoration: none;
+           }
+           .sports4{
+            list-style: none;
+            vertical-align: middle;
+            color: white;
+           }
+           .sports4 li{
+            display: block;
+           }
+           .sports4 li a:hover{
+            color: #DAA520 ;
+            font-size: 20px;
+            text-decoration: none;
+           }
+           .style{
+            font-size: 50px;
+           }
+           .style-2{
+            font-size: 25px;
+           }
+           .style-3{
+            color: #DAA520;
+           }
+           .style-4{
+            text-align:center ;
+            font-size: 50px;
+            color: #2F4F4F;
+           }
+           .background{
+            background-color: #303030;
+            background-size: cover;
+            font-size: 15px;
+           } 
+           .copy{
+            color: white;
+           } 
+           .w{
+            background-color: lightgray;
+           }
+           .dropdown {
+            float: left;
+            overflow: hidden;
+           }
+           /* Dropdown button */
+           .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 0px;
+            background-color: inherit;
+            margin: 0; /* Important for vertical align on mobile phones */
+           }
+           .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+           }
+           .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 5px 10px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+           }
+           .dropdown-content a:hover {
+            background-color: #ddd;
+           }
+           /* Show the dropdown menu on hover */
+           .dropdown:hover .dropdown-content {
+            display: block;
+           }
+           body {font-family: Arial, Helvetica, sans-serif;}
+           form {border: 3px solid #f1f1f1;}
+           input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+           }
+           button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 8px 10px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+           }
+           button:hover {
+            opacity: 0.8;
+           }
+           .cancelbtn {
+            width: auto;
+            padding: 8px 18px;
+            background-color: #f44336;
+           }
+           .container {
+            padding: 10px;
+           }
+           span.psw {
+            float: left;
+            padding-top: 0px;
+           }/* Change styles for span and cancel button on extra small screens */
+           @media screen and (max-width: 160px) {
+            span.psw {
+            display: block;
+            float: none;
+            }
+            .cancelbtn {
+            width: 100%;
+            }
+           }
+           .imag {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+           }
+           .imag img {
+            width: 100%;
+            height: auto;
+           }
+           .imag .btn {
+            position: absolute;
+            top: 98%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+           }
+           .imag .btn:hover {
+            background-color: black;
+           }
+       
+
+
+/* Hide the link that should open and close the topnav on small screens */
+           </style>
+    <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><b>MartMILL</b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-bar-right">
+    <div class="dropdown">
+    <a href="#about" class="w3-bar-item w3-button" >Kids</a>
+    <div class="dropdown-content">
+    <a href="#tshirt">Shirts & T-shirts</a>
+    <a href="#tshirt">Shorts</a>
+    <a href="#tshirt">Jeans & Trousers </a>
+    <a href="#tshirt">Clothing sets</a>
+    <a href="#tshirt">Nightwear</a>
+    <a href="#tshirt">Dresses</a>
+    <a href="#tshirt">Tops</a>
+    <a href="#tshirt">Skirts & shorts</a>
+    <a href="#tshirt">Tights & leggings</a>
+    <a href="#tshirt">Innerwear & loungewear</a>
+    <a href="#tshirt">Flipflops</a>
+    <a href="#tshirt">Shoes</a>
+    <a href="#tshirt">Sandals</a>
+    <a href="#tshirt">Socks</a>
+    <a href="#tshirt">School shoes</a>
+    <a href="#tshirt">Toys</a>
+    </div>
+    </div>
+    <div class="dropdown">
+    <a href="#team" class="w3-bar-item w3-button"> Men</a>
+    <div class="dropdown-content">
+    <a href="#tshirt">Shirts & T-shirts</a>
+    <a href="#tshirt">Casual shoes</a>
+    <a href="#tshirt">Jeans & Trousers </a>
+    <a href="#tshirt">Sweatshirts</a>
+    <a href="#tshirt">Sweaters</a>
+    <a href="#tshirt">Jackets</a>
+    <a href="#tshirt">Blazers & Coats</a>
+    <a href="#tshirt">Suits</a>
+    <a href="#tshirt">Kurtas & Kurta sets</a>
+    <a href="#tshirt">Sneakers</a>
+    <a href="#tshirt">Flipflops</a>
+    <a href="#tshirt">Sports Shoes</a>
+    <a href="#tshirt">Briefs & Trunks</a>
+    <a href="#tshirt">Socks</a>
+    <a href="#tshirt">Sleepwear & loungewear</a>
+    <a href="#tshirt">Formal Shoes</a>
+    </div>
+    </div>
+    <div class="dropdown">
+    <a href="#work" class="w3-bar-item w3-button" > Women</a>
+    <div class="dropdown-content">
+    <a href="#tshirt">Dresses</a>
+    <a href="#tshirt">Tops & Tunics</a>
+    <a href="#tshirt">Jeans & Trousers </a>
+    <a href="#tshirt">Sweatshirts & Sweaters</a>
+    <a href="#tshirt">Jumpsuits</a>
+    <a href="#tshirt">Jackets & Coats</a>
+    <a href="#tshirt">Shorts & Skirts</a>
+    <a href="#tshirt">Co-ords</a>
+    <a href="#tshirt">Kurtis & Kurt sets</a>
+    <a href="#tshirt">Ethnic Wear</a>
+    <a href="#tshirt">Flipflops</a>
+    <a href="#tshirt">Sports Shoes</a>
+    <a href="#tshirt">Belts, Scarves & more</a>
+    <a href="#tshirt">Accessories</a>
+    <a href="#tshirt">Footwear</a>
+    <a href="#tshirt">Sleepwear & loungewear</a>
+    <a href="#tshirt">Shrugs</a>
+    <a href="#tshirt">Sports wear</a>
+    <a href="#tshirt">Waistcoats</a>
+    </div>
+    </div>
+    <div class="dropdown">
+    <a href="#pricing" class="w3-bar-item w3-button">Skincare</a>
+    <div class="dropdown-content">
+    <a href="#tshirt">Face Moisturizers</a>
+    <a href="#tshirt">Cleansers</a>
+    <a href="#tshirt">Masks & peel </a>
+    <a href="#tshirt">Sunscreen</a>
+    <a href="#tshirt">Serum</a>
+    <a href="#tshirt">Face wash</a>
+    <a href="#tshirt">Eye cream</a>
+    <a href="#tshirt">Lip Balm</a>
+    <a href="#tshirt">Body Lotion</a>
+    <a href="#tshirt">Body wash</a>
+    <a href="#tshirt">Body Scrub</a>
+    <a href="#tshirt">Hand Cream</a>
+    </div>
+    </div>
+    <div class="dropdown">
+    <a href="#about" class="w3-bar-item w3-button"><button class="dropbtn"><i class="fa 
+   fa-user">LOGIN</i></button></a>
+    <div class="dropdown-content">
+    <form action="/action_page.php" method="post">
+    <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    
+    <button type="submit">Login</button>
+    <label>
+    <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+   </form>
+   </div>
+   </div>
+    <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-heart"> 
+   WISHLIST</i></a>
+    <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"> 
+   ORDERS</i></a>
+    <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> 
+   CONTACT</a>
+    </div>
+   </div>
+</div>
+<div>
+    <img src="C:\Users\91708\Downloads\MartMILL.png" width="100%" height="100%">
+   </div>
+   <BR>
+   <div>
+    <img src="C:\Users\91708\Downloads\order.png" width="100%" height="100%">
+   </div>
+   <div class="container">
+    <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+    </div>
+    <div class="row">
+    <div class="column">
+    <img src="C:\Users\91708\Downloads\main.webp" style="width:100%">
+    </div>
+    <div class="column">
+    <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="country">Country</label>
+    <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+    <option value="india">India</option>
+    <option value="China">China</option>
+    <option value="Japan">Japan</option>
+    </select>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." 
+   style="height:170px"></textarea>
+    </form>
+    <button onclick='SubForm()'>Submit</button>
+    </div>
+    </div>
+   </div>
+   <div class="imag">
+    <img src="C:\Users\91708\Downloads\kids2.png" width="100%" height="100%"><a 
+   href="order.html"><button class="btn">Buy Now</button></a>
+   </div><br>
+   <div class="imag">
+    <img src="C:\Users\91708\Downloads\her.png" width="100%" height="100%"><a 
+   href="order.html"><button class="btn">Buy Now</button></a>
+   </div><br>
+   <div class="imag">
+    <img src="C:\Users\91708\Downloads\him.png" width="100%" height="100%"><a 
+   href="order.html"><button class="btn">Buy Now</button></a>
+   </div><br>
+   <div class="imag">
+    <img src="C:\Users\91708\Downloads\skincare.png" width="100%" height="100%"><a 
+   href="order.html"><button class="btn">Buy Now</button></a>
+    </div>
+    <footer class="background">
+        <div class="foot">
+        <div class="rows">
+        <div class="c1">
+        <ul class="sports">
+        <li><img src=""></li>
+        <li class="style-3">SA.thousand Oaks</li>
+        <li>1011 Ranch conigo Blvd.</li>
+        <li>MAIN (844) 513-4235</li>
+        <li class="style-3">MartMILL (844) 472-7856</li>
+        </ul>
+        </div>
+        <div class="c3">
+        <ul class="sports3">
+        <li><a href="#men">Men</a></li>
+        <li><a href="#women">Women</a></li>
+        <li><a href="#kids">Kids</a></li>
+        <li><a href="#homeset">Homeset</a></li>
+        <li><a href="#skincare">Skincare</a></li>
+        <li><a href="#giftcard">Gift cards</a></li>
+        <li><a href="#blog">Blog</a></li>
+        </ul>
+        </div>
+        <div class="c2">
+        <ul class="sports2">
+        <li><a href="">Contact</a></li>
+        <li><a href="">T & C</a></li>
+        <li><a href="">FAQ</a></li>
+        <li><a href="">Track Orders</a></li>
+        <li><a href="">Returns</a></li>
+        <li><a href="">Shipping</a></li>
+        <li><a href="">Cancellation</a></li>
+        <li><a href="">Privacy policy</a></li>
+        <li><a href="">Terms of Use</a></li>
+        <li><a href="">Grievance Officer</a></li>
+        </ul>
+        </div>
+        <div class="c4">
+        <ul class="sports4">
+        <li>Popular searches</li>
+        <li><a href="">T-shirts</a></li>
+        <li><a href="">Sandals</a></li>
+        <li><a href="">Blazers</a></li>
+        <li><a href="">Boxers</a></li>
+        <li><a href="">Shoes</a></li>
+        <li><a href="">Mirror</a></li>
+        <li><a href="">Forever 21</a></li>
+        <li><a href="">Adidas shoes</a></li>
+        <li><a href="">Kurtis</a></li>
+        </ul>
+        </div>
+        <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div></div></div>
+       </footer>
+       <br><br>
+       <div class="w">
+       <h2><b>SHOP ONLINE AT MartMILL WITH COMPLETE CONVENIENCE</b></h2>
+       <p>Another reason why MartMILL is the best of all online stores is the complete 
+       convenience that it offers. You can view your favourite brands with price options for 
+       different products in one place. A user-friendly interface will guide you through your 
+       selection process. Comprehensive size charts, product information and high-resolution 
+       images help you make the best buying decisions. You also have the freedom to choose your 
+       payment options, be it card or cash-on-delivery. The 30-day returns policy gives you more 
+       power as a buyer. Additionally, the try-and-buy option for select products takes customerfriendliness to the next level.
+       Enjoy the hassle-free experience as you shop comfortably from your home or your 
+       workplace. You can also shop for your friends, family and loved-ones and avail our gift 
+       services for special occasions.</p>
+       <h2><b>BEST ONLINE SHOPPING SITE IN INDIA FOR FASHION</b></h2>
+       Be it clothing, footwear or accessories, MartMILL offers you the ideal combination of 
+       fashion and functionality for men, women and kids. You will realise that the sky is the limit 
+       when it comes to the types of outfits that you can purchase for different occasions.
+       <br>
+       <br>
+       <b>Smart men’s clothing</b> - At MartMILL you will find myriad options in smart formal 
+       shirts and trousers, cool T-shirts and jeans, or kurta and pyjama combinations for men. Wear 
+       your attitude with printed T-shirts. Create the back-to-campus vibe with varsity T-shirts and 
+       distressed jeans. Be it gingham, buffalo, or window-pane style, checked shirts are unbeatably 
+       smart. Team them up with chinos, cuffed jeans or cropped trousers for a smart casual look. 
+       Opt for a stylish layered look with biker jackets. Head out in cloudy weather with courage in 
+       water-resistant jackets. Browse through our innerwear section to find supportive garments 
+       which would keep you confident in any outfit.
+       <br>
+       <br>
+       <b>Trendy women’s clothing </b>- Online shopping for women at MartMILL is a moodelevating experience. Look hip and stay comfortable with chinos and printed shorts this 
+       summer. Look hot on your date dressed in a little black dress, or opt for red dresses for a 
+       sassy vibe. Striped dresses and T-shirts represent the classic spirit of nautical fashion. Choose 
+       your favourites from among Bardot, off-shoulder, shirt-style, blouson, embroidered and 
+       peplum tops, to name a few. Team them up with skinny-fit jeans, skirts or palazzos. Kurtis 
+       and jeans make the perfect fusion-wear combination for the cool urbanite. Our grand sarees 
+       and lehenga-choli selections are perfect to make an impression at big social events such as 
+       weddings. Our salwar-kameez sets, kurtas and Patiala suits make comfortable options for 
+       regular wear.
+       <br>
+       <br>
+       <b>Fashionable footwear</b> - While clothes maketh the man, the type of footwear you 
+       wear reflects your personality. We bring you an exhaustive lineup of options in casual shoes 
+       for men, such as sneakers and loafers. Make a power statement at work dressed in brogues 
+       and oxfords. Explore our lineup of fashionable footwear for ladies, including pumps, heeled 
+       boots, wedge-heels, and pencil-heels. Or enjoy the best of comfort and style with embellished 
+       and metallic flats.
+       <br>
+       <br>
+       <b>Stylish accessories</b> - MartMILL is one of the best online shopping sites for classy 
+       accessories that perfectly complement your outfits. You can select smart analogue or digital 
+       watches and match them up with belts and ties. Pick up spacious bags, backpacks, and wallets 
+       to store your essentials in style. Whether you prefer minimal jewellery or grand and sparkling 
+       pieces, our online jewellery collection offers you many impressive options.
+       <br><br>
+       <b>Fun and frolic</b> - Online shopping for kids at MartMILL is a complete joy. Your little 
+       princess is going to love the wide variety of pretty dresses, ballerina shoes, headbands and 
+       clips. Delight your son by picking up sports shoes, superhero T-shirts, football jerseys and 
+       much more from our online store. Check out our lineup of toys with which you can create 
+       memories to cherish.
+       <br><br>
+       <b>Beauty begins here </b>- You can also refresh, rejuvenate and reveal beautiful skin with 
+       personal care, beauty and grooming products from MartMILL. Our soaps, shower gels, skin 
+       care creams, lotions and other ayurvedic products are specially formulated to reduce the 
+       effect of aging and offer the ideal cleansing experience. Keep your scalp clean and your hair 
+       uber-stylish with shampoos and hair care products. Choose makeup to enhance your natural 
+       beauty.
+       <br><br>
+       MartMILL is one of the best online shopping sites in India which could help transform your 
+       living spaces completely. Add colour and personality to your bedrooms with bed linen and 
+       curtains. Use smart tableware to impress your guest. Wall decor, clocks, photo frames and 
+       artificial plants are sure to breathe life into any corner of your home.
+       </div>
+       
+       
+   
+   
+   
+</body>
+</html>
